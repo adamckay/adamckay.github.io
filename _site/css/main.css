@@ -14,8 +14,11 @@ p {
   margin: 30px 0;
 }
 p a {
-  /* text-decoration: underline */
+  text-decoration: underline;
   color: #008AFF;
+}
+h1 {
+  color: #0070C0;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -26,7 +29,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #0070C0;
+  text-decoration: underline;
 }
 blockquote {
   color: #808080;
@@ -104,14 +108,14 @@ img::-moz-selection {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #404040;
+  color: #0070C0;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: #404040;
 }
 
 @media only screen and (min-width: 768px) {
@@ -249,6 +253,7 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
+  color: #0070C0
 }
 .post-preview .post-subtitle {
   margin: 0;
@@ -267,6 +272,7 @@ footer .theme-by {
 }
 .post-preview .post-read-more {
   font-weight: 800;
+  color: #0070C0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -295,7 +301,7 @@ header.header-page .page-heading h1 {
   margin-top: 0;
 }
 
-header.header-post .post-heading .post-subheading,
+header.header-post .post-heading .post-subheading .post-title,
 header.header-page .page-heading .page-subheading {
   font-size: 24px;
   line-height: 1.1;
@@ -303,6 +309,7 @@ header.header-page .page-heading .page-subheading {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+  color: #0070C0;
 }
 
 header.header-post .post-heading .post-subheading {
@@ -343,7 +350,7 @@ header.header-post .post-heading .post-subheading {
   padding: 10px 5px;
   background: #FFF;
   border-radius: 0;
-  color: #404040;
+  color: #0070C0;
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
@@ -353,8 +360,8 @@ header.header-post .post-heading .post-subheading {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #0085a1;
-  border: 1px solid #0085a1;
+  background: #0070C0;
+  border: 1px solid #0070C0;
 }
 
 .pager {
