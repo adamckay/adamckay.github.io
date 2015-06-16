@@ -22,3 +22,8 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:search></gcse:search></div>
+<style>
+html {
+	overflow-y: scroll; 
+}
+</style>
