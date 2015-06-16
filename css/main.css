@@ -15,7 +15,7 @@ p {
 }
 p a {
   text-decoration: none;
-  color: #008AFF;
+  color: #0070C0;
 }
 h1 {
   color: #0070C0;
@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: #0070C0;
 }
 a:hover,
 a:focus {
