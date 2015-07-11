@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About me
 subtitle: Hello, let me introduce myself...
 ---
