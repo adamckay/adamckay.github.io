@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python: Is 'is' equal to equality?
+title: Python\: Is 'is' equal to equality?
 subtitle: What's the difference between 'is' and '=='?
 ---
 
