@@ -32,6 +32,7 @@ False
 >>> c == d
 True
 ~~~
+
 That's odd, isn't it? If we check the [**Is Operator in the Python Docs**](https://docs.python.org/2/library/operator.html?highlight=#operator.is_) it says that it _"Tests object identity"_. This means we're not testing if two objects have the same _value_, we're testing if the two objects are the _same_.
 
 As everything in Python is an object we're able to check this ourselves in the Python intepreter using the `id` function, which will return the ID reference of the object.
