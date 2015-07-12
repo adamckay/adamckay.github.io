@@ -2,7 +2,6 @@
 layout: post
 title: Python: Is "is" equal to equality?
 subtitle: What's the difference between "is" and "=="?
-published: false
 ---
 Python is a language seemingly obsessed with readability, with it's English-like syntax often making it possible to read lines of code as grammatical sentences and with very thorough style guide on writing Pythonic code as documented in [**PEP8**](https://www.python.org/dev/peps/pep-0008/). 
 
@@ -33,7 +32,7 @@ False
 >>> c == d
 True
 ```
-That's odd, isn't it? If we check the [Is Operator in the Python Docs](https://docs.python.org/2/library/operator.html?highlight=#operator.is_) it says that it _"Tests object identity"_. This means we're not testing if two objects have the same _value_, we're testing if the two objects are the _same_.
+That's odd, isn't it? If we check the [**Is Operator in the Python Docs**](https://docs.python.org/2/library/operator.html?highlight=#operator.is_) it says that it _"Tests object identity"_. This means we're not testing if two objects have the same _value_, we're testing if the two objects are the _same_.
 
 As everything in Python is an object we're able to check this ourselves in the Python intepreter using the `id` function, which will return the ID reference of the object.
 
@@ -64,7 +63,7 @@ This means the oddity with the `is` operator is making sense - it's returning `T
 
 But why?
 
-Well this comes down to how the CPython intepreter, upon starting, creates a bunch of objects to cache. The [Plain Integer Objects page within the Python C Docs](https://docs.python.org/2/c-api/int.html) explains how _"The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behaviour of Python in this case is undefined"_. 
+Well this comes down to how the CPython intepreter, upon starting, creates a bunch of objects to cache. The [**Plain Integer Objects page within the Python C Docs**](https://docs.python.org/2/c-api/int.html) explains how _"The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behaviour of Python in this case is undefined"_. 
 
 This means when we defined `a` and `b` to `1` we were assigning the same pre-created object to these variables, so our `is` operator determines them to be identical. Our `c` and `d` variables were defined to `300` which does not have a pre-existing cached object and so creates two new objects which are different. 
 
