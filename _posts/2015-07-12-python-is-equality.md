@@ -68,7 +68,7 @@ Well this comes down to how the CPython intepreter, upon starting, creates a bun
 
 This means when we defined `a` and `b` to `1` we were assigning the same pre-created object to these variables, so our `is` operator determines them to be identical. Our `c` and `d` variables were defined to `300` which does not have a pre-existing cached object and so creates two new objects which are different. 
 
-What does this mean?
+How does it affect my code?
 
 Well we should not use the `is` operator in conditionals unless you are explicitly wanting to determine if the two objects are one and the same. 
 In practise, this means the time you will use `is` the most is when checking if a variable `is None` because the `None` object is another one of the pre-created objects - it will always be the same and is faster than `==` because it is implemented in C and is checking the object ID reference, rather than testing equality.
