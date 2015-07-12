@@ -11,6 +11,7 @@ It's, therefore, a common idea to use the `is` operator for conditionals instead
 So what's the problem with using `is` to test for equality? 
 
 Let's take a look at an example. 
+
 ~~~
 >>> a = 1
 >>> b = 1
