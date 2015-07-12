@@ -11,7 +11,7 @@ It's, therefore, a common idea to use the `is` operator for conditionals instead
 So what's the problem with using `is` to test for equality? 
 
 Let's take a look at an example. 
-```
+~~~
 >>> a = 1
 >>> b = 1
 >>> a is b
@@ -23,34 +23,38 @@ True
 False
 >>> a == b
 False
-```
+~~~
+
 So far everything is as we expect, but what happens if we use slightly bigger numbers?
-```
+
+~~~
 >>> c = 300
 >>> d = 300
 >>> c is d
 False
 >>> c == d
 True
-```
+~~~
 
 That's odd, isn't it? If we check the [**Is Operator in the Python Docs**](https://docs.python.org/2/library/operator.html?highlight=#operator.is_) it says that it _"Tests object identity"_. This means we're not testing if two objects have the same _value_, we're testing if the two objects are the _same_.
 
 As everything in Python is an object we're able to check this ourselves in the Python intepreter using the `id` function, which will return the ID reference of the object.
 
 We can test the `id` function does as we expect by creating two variables which point to the same object and checking their IDs.
-```
+~~~
 >>> x = "testing id"
 >>> y = x
 >>> id(x)
 30538192L
 >>> id(y)
 30538192L
-```
+~~~
+
 The IDs are the same, so it's the same object.
 
 Using the same variables as before with our integers we can check if they are the same.
-```
+
+~~~
 >>> id(a)
 30649176L
 >>> id(b)
@@ -59,7 +63,8 @@ Using the same variables as before with our integers we can check if they are th
 31719000L
 >>> id(d)
 31718976L
-```
+~~~
+
 As we can see, the objects for our `a` and `b` variables are exactly the same, however our variables for `c` and `d` are different. 
 This means the oddity with the `is` operator is making sense - it's returning `True` for `a is b` because they are the same objects and `False` for `c is d` because the objects are not the same.
 
