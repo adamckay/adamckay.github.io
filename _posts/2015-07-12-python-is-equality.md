@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Python: Is "is" equal to equality?
-subtitle: What's the difference between "is" and "=="?
+title: Python: Is 'is' equal to equality?
+subtitle: What's the difference between 'is' and '=='?
 ---
 
 Python is a language seemingly obsessed with readability, with it's English-like syntax often making it possible to read lines of code as grammatical sentences and with very thorough style guide on writing Pythonic code as documented in [**PEP8**](https://www.python.org/dev/peps/pep-0008/). 
