@@ -41,6 +41,7 @@ That's odd, isn't it? If we check the [**Is Operator in the Python Docs**](https
 As everything in Python is an object we're able to check this ourselves in the Python intepreter using the `id` function, which will return the ID reference of the object.
 
 We can test the `id` function does as we expect by creating two variables which point to the same object and checking their IDs.
+
 ~~~
 >>> x = "testing id"
 >>> y = x
