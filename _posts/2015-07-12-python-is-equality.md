@@ -13,27 +13,16 @@ So what's the problem with using `is` to test for equality?
 Let's take a look at an example. 
 ```
 >>> a = 1
-
 >>> b = 1
-
 >>> a is b
-
 True
-
 >>> a == b
-
 True
-
 >>> b = 2
-
 >>> a is b
-
 False
-
 >>> a == b
-
 False
-
 ```
 So far everything is as we expect, but what happens if we use slightly bigger numbers?
 ```
