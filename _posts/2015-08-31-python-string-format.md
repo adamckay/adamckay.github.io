@@ -29,18 +29,18 @@ Shortening long strings to a specific number of characters set as an argument.
 
 ###Padding and Aligning Strings
 Strings are, by default, formatted to take up as many characters as necessary, however it is possible to explicitly define the length of a string to pad it if required.  
-`'{:10}'.format('zaphod')` results in `zaphod████`.  
-`'{:>10}'.format('zaphod')` results in `████zaphod`.
+`'{:10}'.format('zaphod')` results in `zaphod⋅⋅⋅⋅`.  
+`'{:>10}'.format('zaphod')` results in `⋅⋅⋅⋅zaphod`.
 
 It is also possible to pad a string by a certain amount as set as an argument.  
-`'{:<{}s}'.format('zaphod', 10)` results in `zaphod████`.
+`'{:<{}s}'.format('zaphod', 10)` results in `zaphod⋅⋅⋅⋅`.
 
 It is even possible to center align strings.  
-`'{:^10}'.format('zaphod')` results in `██zaphod██`.
+`'{:^10}'.format('zaphod')` results in `⋅⋅zaphod⋅⋅`.
 
 ###Truncate and Pad Strings
 It is possible to both truncate and pad strings at the same time.  
-`'{:10.3}'.format('zaphod')` results in `zap███████`.
+`'{:10.3}'.format('zaphod')` results in `zap⋅⋅⋅⋅⋅⋅⋅`.
 
 ###Numbers as Strings
 We can format numbers very easily.  
@@ -48,7 +48,7 @@ We can format numbers very easily.
 
 ###Padding Numbers
 In the same way as strings, we can also pad numbers to a specific length.  
-`'{:4d}'.format(42)` results in `██42`.  
+`'{:4d}'.format(42)` results in `⋅⋅42`.  
 `'{:03d}'.format(42)` results in `042`.  
 `'{:06.2f}'.format(3.141592654)` results in `003.14`.
 
