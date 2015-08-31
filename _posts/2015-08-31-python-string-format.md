@@ -11,10 +11,10 @@ Python has a number of ways to format strings including the plain old string con
 
 ###Basic Formatting
 Positional formatting is the most basic use-case that you may have, however this does not take advantage of the internationalisation that is possible.  
-`'{} {}'.format('arthur', 'dent')` results in `arthur dent`
+`'{} {}'.format('arthur', 'dent')` results in `arthur dent`.
 
 You can also explicitly set the positional index without having to rearrange the variable arguments.  
-`'{1} {0}'.format('ford', 'prefect')` results in `prefect ford`
+`'{1} {0}'.format('ford', 'prefect')` results in `prefect ford`.
 
 ###Named Placeholders
 We can set keywords to make the strings easier to read and this also makes it possible localise. This is my preferred method.  
