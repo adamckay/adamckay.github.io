@@ -54,7 +54,7 @@ In the same way as strings, we can also pad numbers to a specific length.
 
 ###Signed Numbers
 By default, negative numbers are signed, but we can also set positive numbers to be prefixed too.  
-``{:+d}'.format(42)` results in `+42`.
+`'{:+d}'.format(42)` results in `+42`.
 
 ###Datetime
 We can also format datetime objects.  
