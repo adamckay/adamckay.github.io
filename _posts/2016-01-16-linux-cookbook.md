@@ -99,11 +99,11 @@ I'm a big fan of the [O'Reilly Cookbook series](http://shop.oreilly.com/category
 
 
 #### Create a tar.gz archive
-    tar cvzf backup.tar.gz /home/adam
+    tar -czf backup.tar.gz /home/adam
 
 
 #### Uncompress tar.gz archive
-    tar -xvf thumbnails-14-09-12.tar.gz
+    tar -xzf thumbnails-14-09-12.tar.gz
 
 
 #### Open an editor in the terminal
