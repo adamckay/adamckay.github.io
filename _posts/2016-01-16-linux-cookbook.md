@@ -87,7 +87,7 @@ I'm a big fan of the [O'Reilly Cookbook series](http://shop.oreilly.com/category
 
 
 #### Download a file
-	wget http://adammckay.co.uk/
+    wget http://adammckay.co.uk/
 
 
 #### Generate a 10GB file of random data
@@ -99,11 +99,11 @@ I'm a big fan of the [O'Reilly Cookbook series](http://shop.oreilly.com/category
 
 
 #### Create a tar.gz archive
-    tar -czf backup.tar.gz /home/adam
+    tar czf backup.tar.gz /home/adam
 
 
 #### Uncompress tar.gz archive
-    tar -xzf thumbnails-14-09-12.tar.gz
+    tar xzf thumbnails-14-09-12.tar.gz
 
 
 #### Open an editor in the terminal
