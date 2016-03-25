@@ -12,6 +12,7 @@ An iterator is a datatype that represents a stream of data which will, when iter
 A `list` is exactly how it sounds - just a list of things. In other programming languages the equivalent datatype would be an `array`, however an `array` would be of a fixed length and only capable of storing elements of the same type. Python does not have this restriction, a `list` can grow in size as more elements are added to it and it is able to store objects of different types. 
 
 List indices start at 0 and are constructed with square brackets, separating items with a comma like `[42, 'magrathea']` or if you already have a sequence you are able to call `list` on it.
+
 ```
 >>>list('vogon')
 ['v', 'o', 'g', 'o', 'n']
@@ -19,6 +20,7 @@ List indices start at 0 and are constructed with square brackets, separating ite
 
 ### List Slicing
 Slicing a list allows you to define a start and an end to return subsets and is rather powerful.
+
 ```
 L[start:end] # start index to index end-1 
 L[start:] # start index to end of list
@@ -37,6 +39,7 @@ L[:] # the full list (creates a copy)
 ```
 
 There is also a third argument you can use when slicing - `step`. This specifies how often to step through the list. By default this is 1 which means it will iterate over every single element in the list, however you can change this to be any integer, positive or negative. If `step` is a negative integer it will iterate through the list backwards (which is often using when determining if a string is a palindrome).
+
 ```
 numbers = list(range(10))
 >>> numbers[::2]
@@ -47,27 +50,34 @@ answer = list('forty two')
 
 ### Joining Elements in a List
 If you have a list of strings its common to want to join them together to create a single string. Instead of using a `for` loop to iterate over them to concatenate it's possible to use the `join` function with a delimiter. 
+
 ```
 >>> words = ['There\'s', 'a', 'frood', 'who', 'really', 'knows', 'where', 'his', 'towel', 'is']
 >>> ' '.join(words)
 There's a frood who really knows where his towel is
 ```
+
 ### Adding Elements in a List
 Using the Python built-in function `sum` we're able to pass an iterable and it will add each element together.
+
 ```
 >>> numbers = [1, 2, 4, 8, 12, 15]
 >>> sum(numbers)
 42
 ```
+
 ### Sorting a List
 Another Python built-in function makes this a doddle - `sorted`.
+
 ```
 >>> numbers = [15, 2, 12, 1, 8, 4]
 >>> sorted(numbers)
 [1, 2, 4, 8, 12, 15]
 ```
+
 ### Finding the max and min values in a List
 Again, the batteries-included Python standard library has provided us with more built-in functions to make our lives easier - `max` and `min`.
+
 ```
 >>> numbers = [15, 2, 12, 1, 8, 4]
 >>> max(numbers)
@@ -75,8 +85,10 @@ Again, the batteries-included Python standard library has provided us with more 
 >>> min(numbers)
 1
 ```
+
 ### Concatenating Lists
 Suppose we have two separate lists and we want to concatenate them into a single one we can simple use the `+` operator.
+
 ```
 >>> humans = ['arthur', 'trillian']
 >>> betelgeuseans = ['ford', 'zaphod']
@@ -84,8 +96,10 @@ Suppose we have two separate lists and we want to concatenate them into a single
 >>> humans + betalgeuseans + robots
 ['arthur', 'trillian', 'ford', 'zaphod', 'marvin']
 ```
+
 ### Counting the frequency of elements in a List
 We can easily count the frequency of elements in a list with the built-in function `Counter` from `collections`.
+
 ```
 # Setting up our list
 >>> h2g2 = """For instance, on the planet Earth, man had always assumeed that he was more intelligent than dolphins because he had achieved so much—the weel, New York,
@@ -101,8 +115,10 @@ Time is an illusion. Lunchtime doubley so.
 >>> Counter(words).most_common(5)
 [('had', 4), ('the', 4), ('he', 2), ('was', 2), ('than', 2)]
 ```
+
 ### Using a List as a Stack
 In Computer Science a stack is a first-in-last-out abstract datatype which allows you to push elements into a list and pop them out (like putting paper into a pile, the first sheet goes to the bottom and will be the last you get to when picking from the top). The `pop()` method on the `list` datatype removes the element at the specified index and returns it, if no index is specified then it gets the last element in the list. 
+
 ```
 >>> stack = []  # Creating our stack
 >>> stack.append('arthur')
@@ -122,6 +138,7 @@ In Computer Science a stack is a first-in-last-out abstract datatype which allow
 
 ### Using a List as a Queue
 In Computer Science a queue is a first-in-first-out abstract datatype which allows you to push elements into a list and retrieve them in the order they were inserted (like a normal queue at a shop). There are two methods to implement a queue, we can use the `pop()` method similar to Stack by specifying the index to be 0 (and therefore the first element in the list) or we can use `deque` from the `collections` module. A `list` incurs O(n) costs for `pop(0)` so is not suitable to use for large datasets. `deque` gives O(1) performance and behaves in a similar fashion as a `list`. 
+
 ```
 >>> from collections import deque
 >>> queue = deque()
@@ -144,43 +161,58 @@ deque([])
 Finally, we can't talk about the `list` datatype without discussing list comprehensions. List comprehensions are an *awesome* Pythonic way of creating lists. 
 
 Previously you may have created a list using something like this:
+
 ```
 new_list = []
 for something in old_list:
     if condition(something):
         new_list.append(something)
 ```
+
 However, with a list comprehension are able to rewrite the above into a simple one-liner ot enhance readability:
+
 ```
+
 new_list = [something for something in old_list if condition(something)]
 ```
+
 Some examples for why List Comprehensions are pretty awesome:
+
 #### List of numbers divisible by 3
 For loop:
+
 ```
 numbers = []
 for x in range(50):
     if x % 3 == 0:
         numbers.append(x)
 ```
+
 List Comprehension:
+
 ```
 numbers = [x for x in range(50) if x % 3 == 0]
 ```
+
 #### List of squares
 For loop:
+
 ```
 squares = []
 for x in range(50):
 	squares.append(x**2)
 ```
+
 List Comprehension:
+
 ```
 squares = [x**2 for x in range(50)]
 ```
+
 #### Remove vowels from a sentence
 For loop:
-~~~
+
+```
 >>> vowels = 'aeiou'
 >>> h2g2 = "Time is an illusion. Lunchtime doubley so."
 >>> no_vowels = []
@@ -189,14 +221,16 @@ For loop:
 ... 		no_vowels.append(letter)
 >>> ''.join(no_vowels)
 'Tm s n llsn. Lnchtm dbly s.'
-~~~
+```
+
 List Comprehension:
-~~~
+
+```
 >>> vowels = 'aeiou'
 >>> h2g2 = "Time is an illusion. Lunchtime doubley so."
 >>> ''.join([letter for letter in h2g2 if not letter in vowels])
 'Tm s n llsn. Lnchtm dbly s.'
-~~~
+```
 
 ----------
 Please see the Python Docs [on lists](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists) and [sequences](https://docs.python.org/2/library/stdtypes.html#iterator-types)) for further info as the basics are thoroughly explained there.
