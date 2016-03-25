@@ -119,7 +119,7 @@ Time is an illusion. Lunchtime doubley so.
 ### Using a List as a Stack
 In Computer Science a stack is a first-in-last-out abstract datatype which allows you to push elements into a list and pop them out (like putting paper into a pile, the first sheet goes to the bottom and will be the last you get to when picking from the top). The `pop()` method on the `list` datatype removes the element at the specified index and returns it, if no index is specified then it gets the last element in the list. 
 
-```
+```python
 >>> stack = []  # Creating our stack
 >>> stack.append('arthur')
 >>> stack.append('ford')
