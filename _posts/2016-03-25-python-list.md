@@ -180,7 +180,7 @@ squares = [x**2 for x in range(50)]
 ```
 #### Remove vowels from a sentence
 For loop:
-```
+~~~
 >>> vowels = 'aeiou'
 >>> h2g2 = "Time is an illusion. Lunchtime doubley so."
 >>> no_vowels = []
@@ -189,14 +189,14 @@ For loop:
 ... 		no_vowels.append(letter)
 >>> ''.join(no_vowels)
 'Tm s n llsn. Lnchtm dbly s.'
-```
+~~~
 List Comprehension:
-```
+~~~
 >>> vowels = 'aeiou'
 >>> h2g2 = "Time is an illusion. Lunchtime doubley so."
 >>> ''.join([letter for letter in h2g2 if not letter in vowels])
 'Tm s n llsn. Lnchtm dbly s.'
-```
+~~~
 
 ----------
 Please see the Python Docs [on lists](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists) and [sequences](https://docs.python.org/2/library/stdtypes.html#iterator-types)) for further info as the basics are thoroughly explained there.
