@@ -193,6 +193,7 @@ List Comprehension:
 numbers = [x for x in range(50) if x % 3 == 0]
 ```
 
+
 #### List of squares
 For loop:
 
@@ -207,6 +208,7 @@ List Comprehension:
 ```python
 squares = [x**2 for x in range(50)]
 ```
+
 
 #### Remove vowels from a sentence
 For loop:
