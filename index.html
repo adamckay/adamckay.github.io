@@ -27,7 +27,11 @@ html {
     </p>
   
     <div class="post-entry">
-      {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+      {% if post.preview %}
+          {{ post.preview }}
+      {% else %}
+      	  {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+      {% endif %}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
   
