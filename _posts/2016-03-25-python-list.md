@@ -41,10 +41,11 @@ L[:] # the full list (creates a copy)
 There is also a third argument you can use when slicing - `step`. This specifies how often to step through the list. By default this is 1 which means it will iterate over every single element in the list, however you can change this to be any integer, positive or negative. If `step` is a negative integer it will iterate through the list backwards (which is often using when determining if a string is a palindrome).
 
 ~~~python
-numbers = list(range(10))
+>>> numbers = list(range(10))
 >>> numbers[::2]
 [0, 2, 4, 6, 8]
-answer = list('forty two')
+>>> answer = list('forty two')
+>>> answer[::-1]
 ['o', 'w', 't', ' ', 'y', 't', 'r', 'o', 'f']
 ~~~
 
@@ -54,7 +55,7 @@ If you have a list of strings its common to want to join them together to create
 ~~~python
 >>> words = ['There\'s', 'a', 'frood', 'who', 'really', 'knows', 'where', 'his', 'towel', 'is']
 >>> ' '.join(words)
-There's a frood who really knows where his towel is
+"There's a frood who really knows where his towel is"
 ~~~
 
 ### Adding Elements in a List
@@ -102,10 +103,7 @@ We can easily count the frequency of elements in a list with the built-in functi
 
 ~~~python
 # Setting up our list
->>> h2g2 = """For instance, on the planet Earth, man had always assumeed that he was more intelligent than dolphins because he had achieved so much—the weel, New York,
-wars and so on—whilst all the dolphins had ever done was muck about in the
-water having a good time. But conversely, the dolphins had always believed that
-they were far more intelligent than man - for precisely the same reasons.
+>>> h2g2 = """For instance, on the planet Earth, man had always assumeed that he was more intelligent than dolphins because he had achieved so much — the wheel, New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. But conversely, the dolphins had always believed that they were far more intelligent than man - for precisely the same reasons.
 
 Time is an illusion. Lunchtime doubley so.
 """
