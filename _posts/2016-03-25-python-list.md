@@ -2,6 +2,7 @@
 layout: post
 title: Python - List Information and a little Cookbook
 subtitle: All about lists 
+preview: Python has a “batteries included” philosophy as demonstrated with its extensive standard library and included modules. One part of the standard library that I use very often are iterators, or more specifically, lists. Here I’m going to explain a bit about lists in Python and why they’re awesome.
 ---
 Python has a "[batteries included](https://docs.python.org/2/tutorial/stdlib.html#batteries-included)" philosophy as demonstrated with its extensive standard library and included modules. One part of the standard library that I use very often are iterators, or more specifically, lists. Here I'm going to explain a bit about lists in Python and why they're awesome. 
 
