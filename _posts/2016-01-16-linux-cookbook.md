@@ -2,6 +2,7 @@
 layout: post
 title: Linux Command Cookbook
 subtitle: Linux commands I find useful
+preview: I’m a big fan of the O’Reilly Cookbook series as useful reference material covering hundreds of ready-to-use copy-and-paste examples to solve problems. So I’m following in their footsteps in writing tried and tested “recipes” that I’ve found useful and/or often use. 
 ---
 
 I'm a big fan of the [O'Reilly Cookbook series](http://shop.oreilly.com/category/series/cookbooks.do) as useful reference material covering hundreds of ready-to-use copy-and-paste examples to solve problems. So I'm following in their footsteps in writing tried and tested "recipes" that I've found useful and/or often use. 
