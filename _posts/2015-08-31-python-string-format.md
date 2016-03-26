@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Python - String Formatting Cookbook
-subtitle: Commonly used .format() usages
+title: Python - String Formatting with .format()
+subtitle: Why .format() is pretty awesome
 preview: Python has a number of ways to format strings including the plain old string concatenation with +, the % operator and the .format() method. Here I'm going to demonstrate the power of the .format() method with some examples. 
 ---
 
