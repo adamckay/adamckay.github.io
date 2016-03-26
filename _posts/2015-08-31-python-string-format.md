@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Python - String Formatting
+title: Python - String Formatting Cookbook
 subtitle: Commonly used .format() usages
+preview: Python has a number of ways to format strings including the plain old string concatenation with +, the % operator and the .format() method. Here I'm going to demonstrate the power of the .format() method with some examples. 
 ---
 
 Python has a number of ways to format strings including the plain old string concatenation with `+`, the `%` operator and the `.format()` method. String concatenation with `+` can make long strings harder to modify in the future and is very limited for localisation. String formatting with `%` can be difficult to read as there is no indication of the variable that is going to be inserted into the string. String formatting with `.format()` is much better as it is very readable, is easy to localise and can provide a wide range of options for formatting varaibles.
