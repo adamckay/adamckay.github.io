@@ -2,9 +2,10 @@
 layout: post
 title: Python - Is 'is' equal to equality?
 subtitle: What's the difference between 'is' and '=='?
+preview: Python is a language obsessed with readability, with it’s English-like syntax often making it possible to read lines of code as grammatical sentences and with its very thorough style guide on writing Pythonic code as documented in PEP8. It’s, therefore, reasonable for beginners to use the is operator for conditionals instead of ==, however this can often lead it incorrect behaviour.
 ---
 
-Python is a language seemingly obsessed with readability, with it's English-like syntax often making it possible to read lines of code as grammatical sentences and with its very thorough style guide on writing Pythonic code as documented in [**PEP8**](https://www.python.org/dev/peps/pep-0008/). 
+Python is a language obsessed with readability, with it's English-like syntax often making it possible to read lines of code as grammatical sentences and with its very thorough style guide on writing Pythonic code as documented in [**PEP8**](https://www.python.org/dev/peps/pep-0008/). 
 
 It's, therefore, reasonable for beginners to use the `is` operator for conditionals instead of `==`. It's more readable and looks like it should work along side `and`, `or` and `not`, commonly done in other languages as `&&`, `||` and `!`.
 
