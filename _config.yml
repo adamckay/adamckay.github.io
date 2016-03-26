@@ -67,8 +67,8 @@ google_analytics: "UA-28144958-1"
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/London"
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 permalink: /:year-:month-:day-:title
 paginate: 5
 
