@@ -15,7 +15,7 @@ A `list` is exactly how it sounds - just a list of things. In other programming 
 List indices start at 0 and are constructed with square brackets, separating items with a comma like `[42, 'magrathea']` or if you already have a sequence you are able to call `list()` on it.
 
 ~~~python
->>>list('vogon')
+>>> list('vogon')
 ['v', 'o', 'g', 'o', 'n']
 ~~~
 
