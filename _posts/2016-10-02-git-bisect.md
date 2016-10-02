@@ -2,7 +2,7 @@
 layout: post
 title: Git - Using Bisect to find broken commits
 subtitle: Why Git Bisect is pretty awesome
-preview: As almost every single project I've worked on has used [**Git**](https://git-scm.com/) for version control I've come to quickly realise just how powerful - and confusing - it can be. Recently at work a bug was found which was not present in the previous release, our test suite didn't detect the issue and we weren't aware of any changes that could have broken that functionality. 
+preview: As almost every single project I've worked on has used Git for version control I've come to quickly realise just how powerful - and confusing - it can be. Recently at work a bug was found which was not present in the previous release, our test suite didn't detect the issue and we weren't aware of any changes that could have broken that functionality. 
 ---
 
 As almost every single project I've worked on has used [**Git**](https://git-scm.com/) for version control I've come to quickly realise just how powerful - and confusing - it can be. Recently at work a bug was found which was not present in the previous release, our test suite didn't detect the issue and we weren't aware of any changes that could have broken that functionality. Instead of having to manually `checkout` previous commits we were instead able to use the `git bisect` command to find exactly when and why the bug was introduced which can (and did) help towards fixing. 
