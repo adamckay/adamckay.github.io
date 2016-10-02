@@ -11,7 +11,7 @@ Instead of having to manually `checkout` previous commits we were instead able t
 
 We need to tell the `git bisect` command which commit is bad (has the issue) and which commit is good (does not have the issue) and it will then perform a [**binary search**](https://en.wikipedia.org/wiki/Binary_search_algorithm) on our history by checking out a commit in the middle allowing us to perform a test and say whether the bug is present or not. It will repeat this process of checking out the commit between good and bad until it has found the exact commit that introduced the bug. 
 
-### How to use
+## How to use
 To start bisecting your projects history simply run `git bisect start` and then give it the commit hash of where the bug is present using `git bisect bad <hash>` and then the commit hash of where the bug is not present using `git bisect good <hash>`. Git will then checkout the commit in the middle of the history and you can then test to see if the bug is present or not using `git bisect bad` or `git bisect good` respectively. 
 
 If for some reason you are unable to confirm if the bug is present or not in this version (perhaps another bug is preventing you from testing) you can run `git bisect skip` which will tell Git to ignore this version, however if the skipped commit is adjacent to the bad commit we are looking for Git will be unable to tell us exactly which one is the broken commit. 
@@ -22,7 +22,7 @@ To check on your progress in the history you can use `git bisect log`.
 
 Once you're done simply run `git bisect reset` to go back to your HEAD or `git bisect reset <hash>` to checkout a specific commit. 
 
-### Automate it
+## Automate it
 Now we have a method for finding the broken commit it could still be time consuming to complete if to reproduce the bug you have to run numerous steps or perhaps initiate some setup between the commits. 
 
 If the bug can be reproduced by an automated test (which you should now be writing as it's highlighted a hole in your current test suite!) you can tell Git to run the script after checking out the new commit by using `git bisect run` after giving it the `good` and the `bad` commit, for example `git bisect run python tests/find_bad_commit.py`. 
